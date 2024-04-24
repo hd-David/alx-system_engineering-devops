@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Generate an RSA key pair with 4096 bits
-ssh-keygen -t rsa -b 4096 -f /alx-system_engineering-devops/0x0B-ssh/school -N "betty"
+ssh-keygen -t rsa -b 4096 -f /alx-system_engineering-devops/0x0B-ssh/school -N "betty" -m PEM
 
 echo "RSA key pair created successfully:"
 echo "Private key: /alx-system_engineering-devops/0x0B-ssh/school"
