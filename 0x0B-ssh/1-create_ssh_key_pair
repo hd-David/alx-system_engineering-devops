@@ -1,0 +1,8 @@
+#!/bin/env bash
+
+# Generate an RSA key pair with 4096 bits
+ssh-keygen -t rsa -b 4096 -f /school -N "betty"
+
+echo "RSA key pair created successfully:"
+echo "Private key: /school"
+echo "Public key: /school.pub"
