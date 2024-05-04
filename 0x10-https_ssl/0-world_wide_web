@@ -8,7 +8,7 @@ display_info() {
     local dns_output=$(dig +short "$subdomain.$domain" | awk 'NR==1 {print}')
     local record_type=$(echo "$dns_output" | awk '{print $4}')
     local destination=$(echo "$dns_output" | awk '{print $1}')
-    echo "The subdomain $subdomain is a $record_type record and points to $destination"
+    echo "The subdomain $subdomain is A $record_type record and points to $destination"
 }
 
 # Main script
